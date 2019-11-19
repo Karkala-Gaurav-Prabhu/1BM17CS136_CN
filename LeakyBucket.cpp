@@ -41,3 +41,68 @@ bktInput(pktsize,op);
 }
 return 0;
 }
+
+/*
+Output:
+enter o/p rate: 100
+
+ packet no1	packet size=886
+		overflow
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+
+		last 86 bytes sent
+
+		bucket o/p successfully
+
+ packet no2	packet size=915
+		overflow
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+
+		last 15 bytes sent
+
+		bucket o/p successfully
+
+ packet no3	packet size=335
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+
+		last 35 bytes sent
+
+		bucket o/p successfully
+
+ packet no4	packet size=492
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+
+		last 92 bytes sent
+
+		bucket o/p successfully
+
+ packet no5	packet size=421
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+		100bytes outputed
+
+		last 21 bytes sent
+
+		bucket o/p successfully
+*/
